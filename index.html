@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Monedas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <section class="calculadora">
+
+            <p class="etiqueta">CALCULADORA WEB</p>
+
+            <h1>Conversor de monedas</h1>
+
+            <p class="descripcion">
+                Convierte monedas utilizando tasas de cambio obtenidas desde un servicio web.
+            </p>
+
+            <div class="campo">
+                <label for="cantidad">Cantidad</label>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    placeholder="Ej: 100"
+                    min="0"
+                >
+            </div>
+
+            <div class="monedas">
+
+                <div class="campo">
+                    <label for="monedaOrigen">De</label>
+
+                    <select id="monedaOrigen">
+                        <option value="USD">USD - Dólar estadounidense</option>
+                        <option value="DOP">DOP - Peso dominicano</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - Libra esterlina</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="monedaDestino">A</label>
+
+                    <select id="monedaDestino">
+                        <option value="DOP">DOP - Peso dominicano</option>
+                        <option value="USD">USD - Dólar estadounidense</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - Libra esterlina</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button id="convertir">
+                Convertir
+            </button>
+
+            <div class="resultado" id="resultado">
+                <span>Resultado</span>
+                <h2>0.00</h2>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
